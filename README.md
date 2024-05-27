@@ -58,6 +58,12 @@ The dataset comprises question-answer pairs from academic contexts, such as univ
 
 The data is tokenized using the AutoTokenizer from the Hugging Face Transformers library. The tokenizer encodes each question and answer text into token indices, ensuring compatibility with the model architecture.
 
+# Model Architecture
+<p align="center">
+  <img src="./image.png" width="100%"> 
+
+  The GPT-2 model features N Transformer decoder blocks. Each block includes a multi-head masked attention layer, a multi-layer perceptron layer, normalization, dropout layers, and utilizes residual connections to learn from the previous block's input. The multi-head masked attention layer captures sequential relationships in the input sequence using Q, K, and V vectors.
+
 ### Dataset Initialization
 
 The tokenized data is organized into a custom PyTorch Dataset subclass, named QADataset. This dataset prepares input-output pairs for training the CLM. Each data item includes input token IDs and corresponding label token IDs, representing the next token prediction task.

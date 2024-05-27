@@ -11,8 +11,9 @@
 - [Method](#method)
   - [Data Preparation](#data-preparation)
   - [Tokenization](#tokenization)
-  - [Model Architecture](#model-architecture)
   - [Dataset Initialization](#dataset-initialization)
+  - [Model Architecture](#model-architecture)
+  
 - [Results](#results)
 - [Citations](#citations)
 
